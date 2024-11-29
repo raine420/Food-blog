@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blog</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 5rem 1rem;
+            text-align: center;
+        }
+
+        /* Section Styles */
+        #hero {
+            background: url('https://assets.onecompiler.app/42yrjrgzj/42ys39hte/homies.jpg') center/cover no-repeat;
+            color: white;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #recipes, #about, #contact {
+            padding: 2rem 1rem;
+        }
+
+        #recipes {
+            background-color: #fffaf0;
+        }
+
+        #about {
+            background-color: #ffe6e1;
+        }
+
+        #contact {
+            background-color: #f4f4f4;
+        }
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .recipe-card {
+            border: 1px solid #ddd;
+            border-radius: 1px;
+            overflow: none;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-card img {
+            width: 90;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Urban Tastes </h1>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to Urban Tastes </h1>
+        <p>Discover. Cook. Savor!</p>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe-grid">
+            <!-- Recipe Card 1 -->
+            <div class="recipe-card">
+                <img src="https://assets.onecompiler.app/42yrjrgzj/42ysasyw8/bulgogs.jpg" alt="kimchi">
+                <h3>Kimchi
+                (korea)</h3>
+                <p>Kimchi is a traditional Korean side dish consisting of salted and fermented vegetables, most often napa cabbage or Korean radish.
+A wide selection of seasonings are used, including gochugaru, spring onions, garlic, ginger, and jeotgal. Kimchi is also used in a variety of soups and stews.
+the tradition of making kimchi started as a way to ferment and store vegetables during the cold winter when many Koreans died of starvation.
+</p>
+ <h3>Ingridients</h3>
+<p>*1 medium head napa cabbage (about 2 pounds)</p>
+<p>1/4 cup iodine-free sea salt or kosher salt </p>
+<p>Water, preferably distilled or filtered</p>
+<p>1 tablespoon grated garlic (5 to 6 cloves)</p>
+<p>1 teaspoon grated peeled fresh ginger</p>
+<p>1 teaspoon granulated sugar</p>
+<p>2 tablepoons fish sauce or salted shrimp paste, or 3 tablespoons water</p>
+<p>1 to 5 tablespoons Korean red pepper flakes (gochugaru)</p>
+<p>8 ounces Korean radish or daikon radish, peeled and cut into matchsticks</p>
+<!-- Recipe Card 2 -->
+            <div class="recipe-card">
+                <img src="https://assets.onecompiler.app/42yrjrgzj/42ysasyw8/croissant.jpg" alt="Croissant">
+                <h3>Croissant (france)</h3>
+                <p>A croissant is a French pastry made from puff pastry in a crescent shape.and was created in Vienna, Austria in the 17th century It is a buttery, flaky, viennoiserie pastry inspired by the shape of the Austrian kipferl, but using the French yeast-leavened laminated dough. 
+</p><h3>Ingridients</h3>
+<p>3 tablespoons warm water (110 degrees F/45 degrees C)</p>
+<p>1 ¼ teaspoons active dry yeast</p>
+<p>1 teaspoon white sugar</p>
+<p>1 ¾ cups all-purpose flour</p>
+<p>>⅔ cup warm milk</p>
+<p>>2 teaspoons white sugar</p>
+<p>1 ½ teaspoons salt</p>
+<p><p>2 tablespoons vegetable oil</p>
+<p>⅔ cup unsalted butter, chilled</p>
+<p>>1 large egg</p>
+<p>1 tablespoon water</p>
+            </div>
+            <!-- Recipe Card 3 -->
+            <div class="recipe-card">
+                <img src="https://assets.onecompiler.app/42yrjrgzj/42ysasyw8/bulgogi.jpg" alt="bulgogi">
+                <h3>Bulgogi (korea)</h3>
+                <p>Bulgogi is probably the most popular Korean dish, with thinly sliced meat that has a smoky-sweet flavor. it is known as Korean beef BBQ originated during the Goguryeo era (37 BCE–668 CE).You can enjoy it broiled, grilled, or stir-fried. The beef is usually accompanied by lettuce wraps and gochujang (spicy red pepper paste) for wrapping and spicing up the meat.
+</p><h3>Ingridients</h3>
+<p>5 tablespoons soy sauce</p>
+<p>¼ cup chopped green onion</p>
+<p>2 ½ tablespoons white sugar</p>
+<p>2 tablespoons minced garlic</p>
+<p>2 tablespoons sesame seeds</p>
+<p>2 tablespoons sesame oil</p>
+<p>½ teaspoon ground black pepper</p>
+<p>1 pound flank steak, thinly sliced</p>
+                     <!-- Recipe Card 4 -->
+            <div class="recipe-card">
+                <img src="https://assets.onecompiler.app/42yrjrgzj/42ysasyw8/macaron.jpg" alt="macaroon">
+                <h3>Macaron (France)</h3></h3>
+                <p>A macaron or French macaroon is a sweet meringue-based confection made with egg white, icing sugar, granulated sugar, almond meal, and often food colouring. Since the 19th century, a typical Parisian-style macaron has been a sandwich cookie filled with a ganache, buttercream or jam.
+                </p><h3>Ingridients</h3>
+<p>155 grams almond flour</p>
+<p>155 grams powdered sugar</p>
+<p>60 grams aged egg whites this is first measurement</p>
+<p>155 grams sugar</p>
+<p>40 grams water</p>
+<p>60 grams aged egg whites for the meringue</p>
+<p>⅛ teaspoon cream of tartar</p>
+<p>1 teaspoon vanilla extract or any kind of extract</p>
+            <!-- Recipe Card 5 -->
+            <div class="recipe-card">
+                <img src="https://assets.onecompiler.app/42yrjrgzj/42ysasyw8/ramen.jpg" alt="Ramen">
+                <h3>Ramen (japan)</h3></h3>
+                <p>Ramen is a Japanese noodle dish. It consists of Chinese-style wheat noodles served in a broth. Common flavors are soy sauce and miso, with typical toppings including sliced pork, nori, menma, and scallions. Ramen has its roots in Chinese noodle dishes and is a part of Japanese Chinese cuisine.
+                </p>
+                <h3>Ingridients</h3>
+<p>1 serving ramen noodles with choice of soup</p>
+<p>possible toppings:
+<p>narutomaki fishcake</p>
+<p>shiitake mushrooms</p>
+<p>nori seaweed</p>
+<p>wakame seaweed</p>
+<p>bamboo shoots</p>
+<p>soy sauce simmered boiled egg</p>
+<p>spring onions</p>
+<p>sliced meat (chicken, beef, pork)</p>
+<p>sweetcorn</p>
+                <!-- Recipe Card 6 -->
+            <div class="recipe-card">
+                <img src="https://assets.onecompiler.app/42yrjrgzj/42ysasyw8/tira.jpg" alt="Tiramisu">
+                <h3>Tiramisu (italy)</h3></h3>
+                <p>Tiramisu is an Italian dessert made of ladyfinger pastries dipped in coffee, layered with a whipped mixture of egg yolks, sugar, and mascarpone, and flavoured with cocoa powder. The recipe has been adapted into many varieties of cakes and other desserts.
+</p><h3>Ingridients</h3>
+<p>Dutch Processed Cocoa Powder</p>
+<p>Espresso - you'll need a cup, so brew a handful of shots or buy them pre-brewed from your favorite coffee shop or grocery store
+<p>Vanilla Extract</p>
+<p>Pasteurized Eggs - I always buy pasteurized eggs for this recipe as that means the eggs have been heat treated to kill off bacteria that could potentially cause a food borne illness. And since we're using raw eggs, it's the way to go!
+<p>Sugar</p>
+<p>Kosher Salt</p>
+<p>Mascarpone Cheesve - an integral part!! There isn't a great substitution here.</p>
+<p>Heavy cream</p>
+<p>Ladyfinger Cookies </p>
+               <!-- Recipe Card 7 -->
+            <div class="recipe-card">
+                <img src="https://assets.onecompiler.app/42yrjrgzj/42ysasyw8/tonkats.jpg" alt="Tonkatsu">
+                <h3>Tonkatsu (japan)</h3></h3>
+                <p>Tonkatsu, a Japanese delicacy made of a breaded and deep-fried pork cutlet, originated in the early twentieth century. Slices of pork are coated in panko and then fried in oil.
+                </p><h3>Ingridients</h3>
+                <p>Boneless pork loin or pork chop - I used two slices of boneless pork loin pounded to ¾ inch thick. I prefer the pork to be on the thicker side as it results in juicier tonkatsu.
+<p>Flour - Use all-purpose flour to coat the pork chops so the egg and panko coating stick to the pork.
+<p>Egg - The egg helps bind the bread crumbs to the pork, creating a crispy crust.
+
+<!-- Recipe Card 8 -->
+            <div class="recipe-card">
+                <img src="https://assets.onecompiler.app/42yrjrgzj/42ysasyw8/lasag.jpg" alt="Tiramisu">
+                <h3>Lasagna (italy)</h3></h3>
+                <p>Lasagna, also known as lasagne, is a type of pasta, possibly one of the oldest types, made in very wide, flat sheets. In Italian cuisine it is made of stacked layers of pasta alternating with fillings such as ragù.
+</p><h3>Ingridients</h3>
+<p>1 pound sweet Italian sausage</p>
+<p>¾ pound lean ground beef</p>
+<p>½ cup minced onion</p>
+<p>2 cloves garlic, crushed</p>
+<p>1 (28 ounce) can crushed tomatoes</p>
+<p>2 (6.5 ounce) cans canned tomato sauce</p>
+<p>2 (6 ounce) cans tomato paste</p>
+<p>½ cup water</p>
+<p>2 tablespoons white sugar</p>
+<p>4 tablespoons chopped fresh parsley, divided</p>
+<p>1 ½ teaspoons dried basil leaves</p>
+<p>1 ½ teaspoons salt, divided, or to taste</p>
+<p>1 teaspoon Italian seasoning</p>
+<p>½ teaspoon fennel seeds</p>
+<p>¼ teaspoon ground black pepper</p>
+<p>12 lasagna noodles</p>
+<p>16 ounces ricotta cheese</p>
+<p>1 egg</p>
+<p>¾ pound mozzarella cheese, sliced</p>
+<p>¾ cup grated Parmesan cheese</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About </h2>
+        <p>food blog dedicated to celebrating the vibrant, diverse world of flavors. From classic comfort foods to bold global cuisines, I believe every dish has a story to tell. The cuisines here include iconic dishes and desserts from a famous country, which can help you learn where they originated. Join and broaden your knowledge by reading the descriptions.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to collaborate, feel free to reach out at <a href="mailto:utaste.com">utaste.com</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Uraban Taste. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
